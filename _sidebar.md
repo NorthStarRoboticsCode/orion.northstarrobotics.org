@@ -1,2 +1,3 @@
-- [Read Me](README)
+- [Home](README)
 - [Dates](dates)
+- [Sponsors](sponsors)
