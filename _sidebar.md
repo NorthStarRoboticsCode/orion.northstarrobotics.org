@@ -1,2 +1,3 @@
-- [Read Me](README)
-- [Example Second Page](second-page)
+- [Home](README)
+- [Dates](dates)
+- [Sponsors](sponsors)
