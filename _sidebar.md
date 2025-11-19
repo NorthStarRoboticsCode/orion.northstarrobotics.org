@@ -1,3 +1,4 @@
 - [Home](README)
 - [Dates](dates)
 - [Sponsors](sponsors)
+- [Weekly Newsletters](newsletters)
