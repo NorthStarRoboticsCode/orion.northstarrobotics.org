@@ -14,3 +14,6 @@
 
 ## 11/22/2025 Newsletter #5
 <embed src="/media/newsletters/newsletter5.pdf" width="100%" height="500rem">
+
+## 12/06/2025 Newsletter #6
+<embed src="/media/newsletters/newsletter6.pdf" width="100%" height="500rem">
