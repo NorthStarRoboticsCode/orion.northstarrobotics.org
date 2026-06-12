@@ -1,5 +1,6 @@
 import { defineConfig } from 'astro/config'
 
 export default defineConfig({
-    site: 'https://Yes-Because-No.github.io',
+    site: 'https://yes-because-no.github.io',
+    base: '/yes-because-no'
 })
