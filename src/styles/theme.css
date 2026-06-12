@@ -1,0 +1,52 @@
+:root {
+    --purple: #241C36;
+    --purple-dark: #3A2F55;
+    --orange: #FF7F00;
+    --orange-light: #FFA64D;
+    --black: #0A0A0A;
+    --white: #F2F2F2;
+
+    --bg: var(--black);
+    --text: var(--white);
+
+    --card-bg: var(--purple-dark);
+    --card-border: --orange-light;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Orbitron', sans-serif;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.card {
+    background: var(--card-bg);
+    backdrop-filter: blur(8px);
+    border: 1px solid var(--card-border);
+    padding: 1.5rem;
+    border-radius: 12px;
+    transition: 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 20px rgba(255, 127, 0, 0.4);
+}
+
+.btn {
+    background: var(--orange);
+    color: black;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background: var(--orange-light);
+}

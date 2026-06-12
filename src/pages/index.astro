@@ -1,11 +1,153 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import BaseLayout from "../layouts/Layout.astro";
+import Card from "../components/card.astro";
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<BaseLayout title="FTC Team 32180 Orion | NorthStarRobotics">
+	<!-- HERO SECTION -->
+	<section class="hero">
+		<div class="overlay">
+			<h1>FTC Team 32180 Orion | NorthStarRobotics</h1>
+			<a class="btn" href="/robot">See Our Robot →</a>
+		</div>
+	</section>
+
+	<!-- ANGLED ABOUT SECTION -->
+	<section class="angled">
+		<h2>What We Do</h2>
+		<p>
+			As a team, we design, build, and compete with high‑performance
+			robots in the FIRST Tech Challenge. We aim to provide our students
+			with technical experience to prepare them for the future, and
+			develop the FIRST Core Values© in all of our members.
+		</p>
+	</section>
+
+	<!-- CARDS SECTION -->
+	<section class="cards">
+		<Card
+			title="Our Robot"
+			description="Explore our engineering process, CAD, and programming through our portfolio"
+			href="/robot"
+		/>
+
+		<Card
+			title="Outreach"
+			description="See how we support STEM in our community"
+			href="/outreach"
+		/>
+
+		<Card
+			title="About the Team"
+			description="Get to know about the team and its mission."
+			href="/about"
+		/>
+	</section>
+
+	<!-- SPONSORS -->
+	<section class="sponsors">
+		<h2>Our Sponsors</h2>
+		<p>
+			We are proud to be supported by organizations that believe in STEM
+			education.
+		</p>
+		<div class="sponsor-logos">
+			<Card
+				title="Shipley CPA Group"
+				description="The Shipley CPA Group is a firm that provides high quality tax advice to the ever changing tax-environment of small businesses and business owners."
+				href="https://scpagpc.com/"
+			>
+				<img src="x" />
+			</Card>
+		</div>
+	</section>
+</BaseLayout>
+
+<style>
+	/* HERO */
+	.hero {
+		position: relative;
+		height: 75vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		color: white;
+
+		background:
+			linear-gradient(
+				to bottom,
+				rgba(42, 41, 71, 0.35),
+				rgba(10, 10, 10, 0.85)
+			),
+			url("/public/robottransparent.png") center/cover no-repeat;
+	}
+
+	.btn {
+		background: var(--orange);
+		color: black;
+		padding: 0.75rem 1.5rem;
+		border-radius: 6px;
+		font-weight: bold;
+		text-decoration: none;
+		transition: 0.2s;
+	}
+
+	.btn:hover {
+		background: var(--orange-light);
+	}
+
+	/* ANGLED SECTION */
+	.angled {
+		padding: 4rem 2rem;
+		background: var(--purple);
+		color: white;
+		clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
+		text-align: center;
+	}
+
+	/* CARDS */
+	.cards {
+		display: grid;
+		gap: 1.5rem;
+		padding: 3rem 2rem;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	}
+
+	.card {
+		background: var(--card-bg);
+		backdrop-filter: blur(8px);
+		border: 1px solid var(--card-border);
+		padding: 1.5rem;
+		border-radius: 12px;
+		color: white;
+		transition: 0.2s;
+	}
+
+	.card:hover {
+		transform: translateY(-6px);
+		box-shadow: 0 0 20px rgba(255, 127, 0, 0.4);
+	}
+
+	/* SPONSORS */
+	.sponsors {
+		padding: 4rem 2rem;
+		text-align: center;
+	}
+
+	.sponsor-logos {
+		display: flex;
+		gap: 1rem;
+		justify-content: center;
+		margin-top: 2rem;
+		flex-wrap: wrap;
+	}
+
+	.sponsor-card {
+		background: #1a1a1a;
+		padding: 1rem 2rem;
+		border-radius: 8px;
+		border: 1px solid var(--purple);
+		color: white;
+	}
+</style>
