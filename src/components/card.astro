@@ -15,37 +15,3 @@ const { title, description, href } = Astro.props;
         )
     }
 </div>
-
-<style>
-    .card {
-        background: var(--card-bg);
-        backdrop-filter: blur(8px);
-        border: 1px solid var(--card-border);
-        padding: 1.5rem;
-        border-radius: 12px;
-        color: white;
-        transition: 0.2s;
-    }
-
-    .card:hover {
-        transform: translateY(-6px);
-        box-shadow: 0 0 20px rgba(255, 127, 0, 0.4);
-    }
-
-    .card h3 {
-        color: var(--orange);
-        margin-bottom: 0.5rem;
-    }
-
-    .card-link {
-        display: inline-block;
-        margin-top: 1rem;
-        color: var(--orange-light);
-        text-decoration: none;
-        font-weight: bold;
-    }
-
-    .card-link:hover {
-        color: white;
-    }
-</style>
