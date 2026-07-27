@@ -1,0 +1,35 @@
+---
+const { title } = Astro.props;
+import "../styles/global.css";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{title}</title>
+    <link rel="stylesheet" href="/styles/global.css" />
+    <link rel="icon" type="image/x-icon" href="/public/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Inter:wght@300;400;500&display=swap"
+    />
+  </head>
+
+  <body>
+    <header>
+      <nav class="nav">
+        <a href="" class="logo reg-link">FTC Team 32180</a>
+        <a href="/about" class="reg-link">Home</a>
+        <a href="/about" class="reg-link">About</a>
+        <a href="/robot" class="reg-link">Robot</a>
+        <a href="/outreach" class="reg-link">Outreach</a>
+      </nav>
+    </header>
+
+    <main>
+      <slot />
+    </main>
+
+    <footer class="footer">© Orion | NorthStarRobotics</footer>
+  </body>
+</html>

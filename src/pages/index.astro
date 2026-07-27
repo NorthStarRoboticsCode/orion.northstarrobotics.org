@@ -1,0 +1,81 @@
+---
+import BaseLayout from "../layouts/Layout.astro";
+import Card from "../components/card.astro";
+---
+
+<BaseLayout title="FTC Team 32180 Orion | NorthStarRobotics">
+	<!-- --HERO SECTION-- -->
+	<section class="hero">
+		<div class="overlay">
+			<h1>FTC Team 32180 Orion | NorthStarRobotics</h1>
+			<a class="btn" href="/robot">See Our Robot →</a>
+		</div>
+	</section>
+
+	<!-- ANGLED ABOUT SECTION -->
+	<section class="angled">
+		<h2>What We Do</h2>
+		<p>
+			As a team, we design, build, and compete with high‑performance
+			robots in the FIRST Tech Challenge. We aim to provide our students
+			with technical experience to prepare them for the future, and
+			develop the FIRST Core Values© in all of our members.
+		</p>
+		<br />
+	</section>
+
+	<!-- CARDS SECTION -->
+	<section class="cards">
+		<Card
+			title="Our Robot"
+			description="Explore our engineering process, CAD, and programming through our portfolio"
+			href="/robot"
+		/>
+
+		<Card
+			title="Outreach"
+			description="See how we support STEM in our community"
+			href="/outreach"
+		/>
+
+		<Card
+			title="About the Team"
+			description="Get to know about the team and its mission."
+			href="/about"
+		/>
+	</section>
+	<br />
+	<!--INTEREST FORM YAYAYAYAYAY-->
+	<Card
+		title="Interested in Joining?"
+		description="Fill this out to get more information about the team"
+		style="display: grid;place-items: center;text-align: center;"
+	>
+		<iframe
+			src="https://docs.google.com/forms/d/e/1FAIpQLSdMzWQ2Zh32BKLlXh219sQfmJgZmXoWV75IvKoZviRsuYMUzg/viewform?embedded=true"
+			width="100%"
+			height="500"
+			frameborder="0"
+			marginheight="0"
+			marginwidth="0">Loading…</iframe
+		>
+	</Card>
+
+	<!-- SPONSORS -->
+	<section class="sponsors">
+		<h2>Our Sponsors</h2>
+		<p>
+			We are proud to be supported by organizations that believe in STEM
+			education.
+		</p>
+		<div class="sponsor-logos">
+			<Card
+				title="Shipley CPA Group"
+				description="The Shipley CPA Group is a firm that provides high quality tax advice to the ever changing tax-environment of small businesses and business owners."
+				href="https://scpagpc.com/"
+			>
+				<img src="x" />
+			</Card>
+		</div>
+	</section>
+</BaseLayout>

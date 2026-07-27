@@ -1,0 +1,195 @@
+:root {
+    --purple: #241C36;
+    --purple-dark: #3A2F55;
+    --orange: #FF7F00;
+    --orange-light: #FFA64D;
+    --black: #0A0A0A;
+    --white: #F2F2F2;
+
+    --bg: var(--black);
+    --text: var(--white);
+
+    --card-bg: var(--purple-dark);
+    --card-border: --orange-light;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Orbitron', sans-serif;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.card {
+    background: var(--card-bg);
+    backdrop-filter: blur(8px);
+    border: 1px solid var(--card-border);
+    padding: 1.5rem;
+    border-radius: 12px;
+    transition: 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 20px rgba(255, 127, 0, 0.4);
+}
+
+.btn {
+    background: var(--orange);
+    color: black;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background: var(--orange-light);
+}
+
+.nav {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    background: var(--purple);
+    color: white;
+    align-items: center;
+}
+
+.logo {
+    font-weight: bold;
+    margin-right: auto;
+    color: var(--highlight);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--highlight);
+}
+
+.footer {
+    padding: 1rem;
+    text-align: center;
+    background: var(--purple);
+    margin-top: 2rem;
+}
+
+.hero {
+    position: relative;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+
+    background:
+        linear-gradient(to bottom,
+            rgba(42, 41, 71, 0.35),
+            rgba(10, 10, 10, 0.85)),
+        url("/robottransparent.png") center/cover no-repeat;
+}
+
+
+/* ANGLED SECTION */
+.angled {
+    padding: 4rem 2rem;
+    background: var(--purple);
+    color: white;
+    clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
+    text-align: center;
+}
+
+/* CARDS */
+.cards {
+    display: grid;
+    gap: 1.5rem;
+    padding: 3rem 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.card {
+    background: var(--card-bg);
+    backdrop-filter: blur(8px);
+    border: 1px solid var(--card-border);
+    padding: 1.5rem;
+    border-radius: 12px;
+    color: white;
+    transition: 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 20px rgba(255, 127, 0, 0.4);
+}
+
+.card h3 {
+    color: var(--orange);
+    margin-bottom: 0.5rem;
+}
+
+.card-link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--orange-light);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card-link:hover {
+    color: white;
+}
+
+/* SPONSORS */
+.sponsors {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.sponsor-logos {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.sponsor-card {
+    background: #1a1a1a;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    border: 1px solid var(--purple);
+    color: white;
+}
+
+.reg-link {
+    color: white
+}
+
+.reg-link:hover {
+    color: var(--orange-light)
+}
+
+.mini-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+    justify-content: center;
+}
+
+.mini-card {
+    padding: 0.75rem 1rem;
+    background: #ffffff20;
+    border-radius: 8px;
+    font-size: 1.05rem;
+    backdrop-filter: blur(4px);
+}
