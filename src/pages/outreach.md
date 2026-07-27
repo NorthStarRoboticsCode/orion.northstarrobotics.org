@@ -17,7 +17,7 @@ We also hold connections through multiple homeschool co-ops throughout central I
 
 # Outreach Events Past
 
-<img src="/yes-because-no/masiuk-sage-bryce-ryker.png" width="30%"/>
+<img src="/masiuk-sage-bryce-ryker.png" width="30%"/>
 
 Throughout the FIRST Age Season, both students and mentors have dedicated time to volunteering at the following FLLC and FTC events:  
 
@@ -29,7 +29,7 @@ UIndy FLLC States (01/18/26)
   
 
 
-<img src="/yes-because-no/bryce-abbey-sage-mrscastle.png" width="30%"/>
+<img src="/bryce-abbey-sage-mrscastle.png" width="30%"/>
 
 Two of our students hold leadership position in the FRC scouting alliance that 28 FRC teams from around the state are a part of! Through this, we have been able to provide a valuable service to the FRC community in addition to both FLLC and FTC.
 
@@ -39,7 +39,7 @@ During the FIRST Age Season, we volunteered 157 hours with four student team mem
 
 # Outreach Events Present
 
-<img src="/yes-because-no/KERCarmelFest.jpg" width="30%"/>
+<img src="/KERCarmelFest.jpg" width="30%"/>
 
 While we still maintain our connections with all of our past outreach events we have added another partner! KidsExploreRobotics is one of our largest outreach partners.
 

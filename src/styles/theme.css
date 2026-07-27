@@ -95,7 +95,7 @@ a:hover {
         linear-gradient(to bottom,
             rgba(42, 41, 71, 0.35),
             rgba(10, 10, 10, 0.85)),
-        url("/yes-because-no/robottransparent.png") center/cover no-repeat;
+        url("/robottransparent.png") center/cover no-repeat;
 }
 
 
