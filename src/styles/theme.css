@@ -177,3 +177,19 @@ a:hover {
 .reg-link:hover {
     color: var(--orange-light)
 }
+
+.mini-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+    justify-content: center;
+}
+
+.mini-card {
+    padding: 0.75rem 1rem;
+    background: #ffffff20;
+    border-radius: 8px;
+    font-size: 1.05rem;
+    backdrop-filter: blur(4px);
+}
